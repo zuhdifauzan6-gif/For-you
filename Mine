@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Zahidah ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+max-width:500px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+animation:fade 1s;
+}
+
+h1{
+color:#ff4081;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+color:#444;
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#ff4081;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+#surprise{
+display:none;
+margin-top:20px;
+animation:fade 1s;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+<h1>🎉 Happy Birthday Zahidah Salamah 🎂❤️</h1>
+
+<p>
+Selamat ulang tahun, sayangku <b>Zahidah Salamah</b>. ❤️<br><br>
+
+Terima kasih sudah menjadi bagian terindah dalam hidupku. Semoga di usia yang baru ini Allah selalu memberikan kesehatan, kebahagiaan, rezeki yang melimpah, serta mengabulkan semua doa dan impianmu.
+
+Aku berharap kita bisa terus tumbuh bersama, saling menguatkan, saling mendukung, dan semoga suatu hari nanti Allah mempersatukan kita dalam ikatan yang halal.
+
+Tetaplah menjadi Zahidah yang baik, kuat, penyayang, dan selalu tersenyum. Aku bangga memilikimu.
+
+I love you more than yesterday, and I'll love you even more tomorrow. ❤️
+</p>
+
+<button onclick="showMessage()">Klik Hadiah 🎁</button>
+
+<div id="surprise">
+<h2>💖 Aku Sayang Kamu 💖</h2>
+<p>
+Semoga ulang tahun ini menjadi awal dari semua kebahagiaan yang akan datang.
+<br><br>
+❤️ Happy Birthday, My Love ❤️
+</p>
+</div>
+
+</div>
+
+<script>
+function showMessage(){
+document.getElementById("surprise").style.display="block";
+
+for(let i=0;i<60;i++){
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.top="-30px";
+heart.style.animationDuration=(3+Math.random()*3)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+}
+}
+</script>
+
+</body>
+</html>
